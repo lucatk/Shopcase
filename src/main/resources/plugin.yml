@@ -1,0 +1,4 @@
+name: Shopcase
+version: 1.0
+
+main: de.derluuc.shopcase.Shopcase

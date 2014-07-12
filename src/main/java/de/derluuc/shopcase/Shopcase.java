@@ -1,17 +1,31 @@
 package de.derluuc.shopcase;
 
-import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.inventory.ItemStack;
 
-public class Shopcase extends JavaPlugin {
+public class Shopcase {
 
-	@Override
-	public void onEnable() {
-		
-	}
+	private ItemStack item;
+	private double price;
 	
-	@Override
-	public void onDisable() {
-		
+	public Shopcase(ItemStack item, double price) {
+		this.item = item;
+		this.price = price;
+	}
+
+	public ItemStack getItem() {
+		return item;
+	}
+
+	public void setItem(ItemStack item) {
+		this.item = item;
+	}
+
+	public double getPrice() {
+		return price;
+	}
+
+	public void setPrice(double price) {
+		this.price = price;
 	}
 	
 }
